@@ -236,7 +236,7 @@
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>8 0.2 24/size>
+              <size>8 0.2 4</size>
             </box>
           </geometry>
         </collision>
@@ -244,7 +244,7 @@
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>8 0.2 24/size>
+              <size>8 0.2 4</size>
             </box>
           </geometry>
           <material>
@@ -282,7 +282,7 @@
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>8 0.2 24/size>
+              <size>8 0.2 4</size>
             </box>
           </geometry>
         </collision>
@@ -290,7 +290,7 @@
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>8 0.2 24/size>
+              <size>8 0.2 4</size>
             </box>
           </geometry>
           <material>
@@ -305,7 +305,7 @@
           <pose>1.5 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>3 0.2 24/size>
+              <size>3 0.2 4</size>
             </box>
           </geometry>
         </collision>
@@ -313,7 +313,7 @@
           <pose>1.5 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>3 0.2 24/size>
+              <size>3 0.2 4</size>
             </box>
           </geometry>
           <material>
@@ -328,7 +328,7 @@
           <pose>1 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>2 0.2 24/size>
+              <size>2 0.2 4</size>
             </box>
           </geometry>
         </collision>
@@ -336,7 +336,7 @@
           <pose>1 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>2 0.2 24/size>
+              <size>2 0.2 4</size>
             </box>
           </geometry>
           <material>
@@ -351,7 +351,7 @@
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>8 0.2 24/size>
+              <size>8 0.2 4</size>
             </box>
           </geometry>
         </collision>
@@ -359,7 +359,7 @@
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>8 0.2 24/size>
+              <size>8 0.2 4</size>
             </box>
           </geometry>
           <material>
@@ -374,7 +374,7 @@
           <pose>2.5 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>5 0.2 24/size>
+              <size>5 0.2 4</size>
             </box>
           </geometry>
         </collision>
@@ -382,7 +382,7 @@
           <pose>2.5 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>5 0.2 24/size>
+              <size>5 0.2 4</size>
             </box>
           </geometry>
           <material>
