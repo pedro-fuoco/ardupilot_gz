@@ -236,7 +236,7 @@
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>8 0.2 24/size>
+              <size>8 0.2 4</size>
             </box>
           </geometry>
         </collision>
@@ -244,7 +244,7 @@
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>8 0.2 24/size>
+              <size>8 0.2 4</size>
             </box>
           </geometry>
           <material>
@@ -282,7 +282,7 @@
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>8 0.2 24/size>
+              <size>8 0.2 4</size>
             </box>
           </geometry>
         </collision>
@@ -290,7 +290,7 @@
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>8 0.2 24/size>
+              <size>8 0.2 4</size>
             </box>
           </geometry>
           <material>
@@ -305,7 +305,7 @@
           <pose>1.5 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>3 0.2 24/size>
+              <size>3 0.2 4</size>
             </box>
           </geometry>
         </collision>
@@ -313,7 +313,7 @@
           <pose>1.5 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>3 0.2 24/size>
+              <size>3 0.2 4</size>
             </box>
           </geometry>
           <material>
@@ -328,7 +328,7 @@
           <pose>1 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>2 0.2 24/size>
+              <size>2 0.2 4</size>
             </box>
           </geometry>
         </collision>
@@ -336,7 +336,7 @@
           <pose>1 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>2 0.2 24/size>
+              <size>2 0.2 4</size>
             </box>
           </geometry>
           <material>
@@ -351,7 +351,7 @@
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>8 0.2 24/size>
+              <size>8 0.2 4</size>
             </box>
           </geometry>
         </collision>
@@ -359,7 +359,7 @@
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>8 0.2 24/size>
+              <size>8 0.2 4</size>
             </box>
           </geometry>
           <material>
@@ -374,7 +374,7 @@
           <pose>2.5 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>5 0.2 24/size>
+              <size>5 0.2 4</size>
             </box>
           </geometry>
         </collision>
@@ -382,7 +382,7 @@
           <pose>2.5 0 1.25 0 0 0</pose>
           <geometry>
             <box>
-              <size>5 0.2 24/size>
+              <size>5 0.2 4</size>
             </box>
           </geometry>
           <material>
@@ -426,65 +426,11 @@
       </link>
     </model>
 
-    <model name="iris_lidar">
-      <include>
-        <uri>model://iris_with_ardupilot</uri>
-        <name>iris</name>
-        <pose>0 0 0.194923 0 0 1.57079632</pose>
-      </include>
-      <link name="lidar_link">
-        <pose>0 0 0.5 0 0 0</pose>
-        <inertial>
-          <mass>0.1</mass>
-          <inertia>
-            <ixx>0.000166667</ixx>
-            <iyy>0.000166667</iyy>
-            <izz>0.000166667</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.1 0.1</size>
-            </box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.1 0.1</size>
-            </box>
-          </geometry>
-        </visual>
-        <sensor name='gpu_lidar' type='gpu_lidar'>
-        <pose>0 0 0 0 0 0</pose>
-          <topic>lidar</topic>
-          <update_rate>10</update_rate>
-          <lidar>
-            <scan>
-              <horizontal>
-                <samples>640</samples>
-                <resolution>1</resolution>
-                <min_angle>-3.1415923</min_angle>
-                <max_angle>3.1415923</max_angle>
-              </horizontal>
-              <vertical>
-                <samples>1</samples>
-                <resolution>1</resolution>
-                <min_angle>0.0</min_angle>
-                <max_angle>0.0</max_angle>
-              </vertical>
-            </scan>
-            <range>
-              <min>0.08</min>
-              <max>10.0</max>
-              <resolution>0.01</resolution>
-            </range>
-          </lidar>
-          <visualize>true</visualize>
-        </sensor>
-      </link>
-    </model>
+    <include>
+      <uri>model://iris_with_lidar</uri>
+      <name>iris</name>
+      <pose>0 0 0.194923 0 0 1.57079632</pose>
+    </include>
     
   </world>
 </sdf>

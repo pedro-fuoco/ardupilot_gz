@@ -44,6 +44,11 @@ vcs import --recursive < ros2_gz.repos
 export GZ_VERSION=garden
 ```
 
+Remember to also add the resource path for gazebo, here's an example of how to do that:
+
+```bash
+export GZ_SIM_RESOURCE_PATH=$HOME/ros2_ws/src/ardupilot_gz/ardupilot_gz_description/models:$GZ_SIM_RESOURCE_PATH
+```
 #### 4. Update ROS dependencies
 
 ```bash
