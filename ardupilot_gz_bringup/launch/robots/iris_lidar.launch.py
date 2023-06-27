@@ -51,7 +51,9 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     """Generate a launch description for a iris quadcopter."""
     pkg_ardupilot_sitl = get_package_share_directory("ardupilot_sitl")
-    pkg_ardupilot_gz_description = get_package_share_directory("ardupilot_gz_description")
+    pkg_ardupilot_gz_description = get_package_share_directory(
+        "ardupilot_gz_description"
+    )
     pkg_project_bringup = get_package_share_directory("ardupilot_gz_bringup")
 
     # Include component launch files.
