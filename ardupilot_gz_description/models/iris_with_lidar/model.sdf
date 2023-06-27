@@ -195,8 +195,8 @@
       <fdm_port_in>9002</fdm_port_in>
       <connectionTimeoutMaxCount>5</connectionTimeoutMaxCount>
       <lock_step>1</lock_step>
-      <modelXYZToAirplaneXForwardZDown>0 0 0 3.141593 0 0</modelXYZToAirplaneXForwardZDown>
-      <gazeboXYZToNED>0 0 0 3.141593 0 1.57079632</gazeboXYZToNED>
+      <modelXYZToAirplaneXForwardZDown degrees="true">0 0 0 180 0 0</modelXYZToAirplaneXForwardZDown>
+      <gazeboXYZToNED degrees="true">0 0 0 180 0 90</gazeboXYZToNED>
 
       <!-- Sensors -->
       <imuName>imu_link::imu_sensor</imuName>
@@ -321,8 +321,8 @@
             <horizontal>
               <samples>640</samples>
               <resolution>1</resolution>
-              <min_angle>-3.1415923</min_angle>
-              <max_angle>3.1415923</max_angle>
+              <min_angle degrees="true">-180</min_angle>
+              <max_angle degrees="true">180</max_angle>
             </horizontal>
             <vertical>
               <samples>1</samples>
@@ -346,6 +346,13 @@
       <child>base_scan</child>
       <axis>
         <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+        </dynamics>      
       </axis>
     </joint>
 

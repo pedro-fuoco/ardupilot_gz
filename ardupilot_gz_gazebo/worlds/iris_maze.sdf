@@ -70,7 +70,7 @@
     <model name='maze'>
       <static>1</static>
       <link name='Wall_0'>
-        <pose>-10 -10 0 0 0 1.570796327</pose>
+        <pose degrees="true">-10 -10 0 0 0 90</pose>
         <collision name='Wall_0_Collision'>
           <pose>10 0 1.25 0 0 0</pose>
           <geometry>
@@ -116,7 +116,7 @@
       </link>
 
       <link name='Wall_2'>
-        <pose>10 -10 0 0 0 1.570796327</pose>
+        <pose degrees="true">10 -10 0 0 0 90</pose>
         <collision name='Wall_2_Collision'>
           <pose>8.5 0 1.25 0 0 0</pose>
           <geometry>
@@ -185,7 +185,7 @@
       </link>
       
       <link name='Wall_5'>
-        <pose>-7 -7 0 0 0 1.570796327</pose>
+        <pose degrees="true">-7 -7 0 0 0 90</pose>
         <collision name='Wall_5_Collision'>
           <pose>7 0 1.25 0 0 0</pose>
           <geometry>
@@ -231,7 +231,7 @@
       </link>
       
       <link name='Wall_7'>
-        <pose>-4 -4 0 0 0 1.570796327</pose>
+        <pose degrees="true">-4 -4 0 0 0 90</pose>
         <collision name='Wall_7_Collision'>
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
@@ -277,7 +277,7 @@
       </link>
       
       <link name='Wall_9'>
-        <pose>-1 -1 0 0 0 1.570796327</pose>
+        <pose degrees="true">-1 -1 0 0 0 90</pose>
         <collision name='Wall_9_Collision'>
           <pose>4 0 1.25 0 0 0</pose>
           <geometry>
@@ -300,7 +300,7 @@
       </link>
       
       <link name='Wall_10'>
-        <pose>-4 7 0 0 0 1.570796327</pose>
+        <pose degrees="true">-4 7 0 0 0 90</pose>
         <collision name='Wall_10_Collision'>
           <pose>1.5 0 1.25 0 0 0</pose>
           <geometry>
@@ -369,7 +369,7 @@
       </link>
       
       <link name='Wall_13'>
-        <pose>5 2 0 0 0 1.570796327</pose>
+        <pose degrees="true">5 2 0 0 0 90</pose>
         <collision name='Wall_13_Collision'>
           <pose>2.5 0 1.25 0 0 0</pose>
           <geometry>
@@ -429,7 +429,7 @@
     <include>
       <uri>model://iris_with_lidar</uri>
       <name>iris</name>
-      <pose>0 0 0.194923 0 0 1.57079632</pose>
+      <pose degrees="true">0 0 0.194923 0 0 90</pose>
     </include>
     
   </world>
