@@ -346,6 +346,13 @@
       <child>base_scan</child>
       <axis>
         <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+        </dynamics>      
       </axis>
     </joint>
 
