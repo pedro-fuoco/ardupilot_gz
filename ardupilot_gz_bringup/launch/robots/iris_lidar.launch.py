@@ -89,6 +89,13 @@ def generate_launch_description():
                 pkg_ardupilot_sitl,
                 "config",
                 "default_params",
+                "gazebo-iris.parm",
+            )
+            + ","
+            + os.path.join(
+                pkg_ardupilot_sitl,
+                "config",
+                "default_params",
                 "dds_udp.parm",
             ),
             "sim_address": "127.0.0.1",
