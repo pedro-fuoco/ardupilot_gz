@@ -120,7 +120,7 @@ def launch_state_pub_with_bridge(context):
         ros_gz_bridge_config = "iris_3Dlidar_bridge.yaml"
 
 
-    # Publish /tf and /tf_static.
+    # Publish /ap/tf and /ap/tf_static.
     robot_state_publisher = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
@@ -129,6 +129,10 @@ def launch_state_pub_with_bridge(context):
         parameters=[
             {"robot_description": robot_desc},
             {"frame_prefix": ""},
+        ],
+        remappings=[
+            ("/tf", "/ap/tf"),
+            ("/tf_static", "/ap/tf_static"),
         ],
     )
 
@@ -153,7 +157,7 @@ def launch_state_pub_with_bridge(context):
         executable="relay",
         arguments=[
             "/gz/tf",
-            "/tf",
+            "/ap/tf",
         ],
         output="screen",
         respawn=False,

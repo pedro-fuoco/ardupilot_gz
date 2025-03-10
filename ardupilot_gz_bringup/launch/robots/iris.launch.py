@@ -122,7 +122,7 @@ def generate_launch_description():
         robot_desc = infp.read()
         # print(robot_desc)
 
-    # Publish /tf and /tf_static.
+    # Publish /ap/tf and /ap/tf_static.
     robot_state_publisher = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
@@ -156,7 +156,7 @@ def generate_launch_description():
     #     executable="transform",
     #     arguments=[
     #         "/gz/tf",
-    #         "/tf",
+    #         "/ap/tf",
     #         "tf2_msgs/msg/TFMessage",
     #         "tf2_msgs.msg.TFMessage(transforms=[x for x in m.transforms if x.header.frame_id == 'odom'])",
     #         "--import",
@@ -173,7 +173,7 @@ def generate_launch_description():
         executable="relay",
         arguments=[
             "/gz/tf",
-            "/tf",
+            "/ap/tf",
         ],
         output="screen",
         respawn=False,
